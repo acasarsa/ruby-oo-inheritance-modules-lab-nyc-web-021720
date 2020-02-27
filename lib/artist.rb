@@ -33,10 +33,11 @@ class Artist
   end
 
   def add_songs(songs)
-    songs.each { |song| add_song(song) }
+    songs.each { |song| add_song(song) } 
+    # uses add_song to iterate through array of song onbjects and add them individually. 
   end
 
   def to_param
-    name.downcase.gsub(' ', '-')
+    name.downcase.gsub(' ', '-') # finds pattern and replaces it with second thing
   end
 end
